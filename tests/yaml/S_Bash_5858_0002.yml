@@ -1,12 +1,12 @@
-template: true
-valuesFilePath: ../values/gitRepoValues.yml
+# template: true
+# valuesFilePath: ../values/gitRepoValues.yml
 
 resources:
   - name: repo
     type: GitRepo
     configuration:
-      gitProvider: s_gitHub
-      path: {{ .Values.GitHub.Org_test_Automation.path }}
+      gitProvider: deepikaGithub
+      path: deepikasl/Org_test_Automation_bash
 
 pipelines:
   - name: pipeline_S_Bash_0578_A
